@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#overview">Overview</a> •
-  <a href="#credits">How To Run</a> •
+  <a href="#how-to-run-the-poc">How To Run</a> •
   <a href="#observations">Observations</a> •
   <a href="#license">License</a>
 </p>
