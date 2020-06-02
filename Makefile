@@ -2,7 +2,7 @@ SHELL=/bin/bash
 
 # Be sure that the infra has totally stopped, and then start it again (to reload SQL dumps in case of any change).
 start:
-	make stop; docker-compose up
+	gzip -d dump.sql.gz; make stop; docker-compose up
 
 # Stop the entire infra.
 stop:

@@ -30,14 +30,14 @@ Before running the experiments, we explicitly disable query caching by setting "
 
 ## How to Run the PoC
 
-To clone and run this PoC, you'll need Git and Docker-Compose installed on your computer.
+To clone and run this PoC, you'll need Git, Docker-Compose and gzip (to unzip the `dump.sql.gz`) installed on your computer.
 
 To run it, start the MariaDB service running the following command:
 ```sh
 make start
 ```
 
-Once mysqld is ready for connections (something like `mariadb    | 2020-06-02 21:29:12 0 [Note] mysqld: ready for connections.` should appear in the CLI), run the PoC in a separate terminal window:
+Once mysqld is ready for connections (something like `mariadb    | 2020-06-02 21:29:12 0 [Note] mysqld: ready for connections.` should appear in the CLI - should take 30-40 seconds), run the PoC in a separate terminal window:
 ```
 make poc
 ```
