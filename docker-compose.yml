@@ -1,0 +1,16 @@
+version: "3.6"
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    command: --max_allowed_packet=5000M
+    ports:
+      - 3306:3306
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: poc
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
